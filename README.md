@@ -126,4 +126,4 @@ Do you have any further queries?
 ## 👨‍💻 Author
 
 - **Your Name**  
-  [GitHub](https://github.com/yourusername)
+  [GitHub](https://github.com/pranavyedla)
