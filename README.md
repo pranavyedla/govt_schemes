@@ -38,7 +38,7 @@ A conversational AI chatbot built with **Flask** and **Google's Gemini API** to 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/pranavyedla/government_schemes.git
+git clone https://github.com/pranavyedla/govt_schemes.git
 cd govt_schemes
 ```
 
