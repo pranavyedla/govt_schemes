@@ -24,7 +24,7 @@ A conversational AI chatbot built with **Flask** and **Google's Gemini API** to 
 ## 📂 Project Structure
 
 ```
-├── app.py                 # Main Flask application
+├── app.ipynb                 # Main Flask application
 ├── requirements.txt       # Project dependencies
 ├── templates/
 │   └── index.html         # Web UI template
@@ -38,8 +38,8 @@ A conversational AI chatbot built with **Flask** and **Google's Gemini API** to 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/government-schemes-chatbot.git
-cd government-schemes-chatbot
+git clone https://github.com/pranavyedla/government_schemes.git
+cd govt_schemes
 ```
 
 ### 2. Create a Virtual Environment (Recommended)
@@ -67,11 +67,7 @@ api_key=your_gemini_api_key_here
 
 ## ▶️ Run the App Locally
 
-```bash
-python app.py
-```
-
-Then open your browser and go to [http://localhost:5000](http://localhost:5000)
+Click on the run button on the code cell
 
 ---
 
@@ -125,5 +121,5 @@ Do you have any further queries?
 
 ## 👨‍💻 Author
 
-- **Your Name**  
+- **Pranav Yedla**  
   [GitHub](https://github.com/pranavyedla)
