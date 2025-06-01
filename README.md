@@ -24,7 +24,7 @@ A conversational AI chatbot built with **Flask** and **Google's Gemini API** to 
 ## 📂 Project Structure
 
 ```
-├── app.ipynb                 # Main Flask application
+├── app.py                 # Main Flask application
 ├── requirements.txt       # Project dependencies
 ├── templates/
 │   └── index.html         # Web UI template
@@ -67,7 +67,11 @@ api_key=your_gemini_api_key_here
 
 ## ▶️ Run the App Locally
 
-Click on the run button on the code cell
+```bash
+python app.py
+```
+
+Then open your browser and go to [http://localhost:5000](http://localhost:5000)
 
 ---
 
