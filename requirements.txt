@@ -1,0 +1,6 @@
+google.generativeai
+Flask
+requests
+jsonify
+python-dotenv
+gunicorn

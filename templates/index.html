@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f9;
+      flex-direction: column;
+      overflow: auto; /* Allow scrolling */
+    }
+
+    .container {
+      text-align: center;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+      box-sizing: border-box;
+      margin-top: 20px; /* Add some spacing from the top */
+      flex-grow: 1; /* Allow it to take up space but also scroll if necessary */
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    .response {
+      margin-top: 20px;
+      background-color: #f1f1f1;
+      padding: 15px;
+      border-radius: 5px;
+      max-width: 100%;
+      word-wrap: break-word;
+      text-align: left;
+      font-size: 16px;
+    }
+
+    .response b {
+      font-weight: bold;
+      color: #2d87f0;
+    }
+
+    /* Media Query for smaller screens */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        padding: 20px;
+        width: 100%;
+      }
+
+      input[type="text"], input[type="submit"] {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Welfare Chatbot</h2>
+
+    <form method="POST" action="/chat">
+      <label for="prompt">Ask a question:</label><br><br>
+      <input type="text" id="prompt" name="prompt" required>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+
+    {% if reply %}
+    <div class="response">
+      <strong>Response:</strong><br><br>
+      {{ reply | safe }}
+    </div>
+    {% endif %}
+  </div>
+
+</body>
+</html>
+
